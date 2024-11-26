@@ -1,4 +1,4 @@
-# bda-modulo-2-evaluacion-final-Lolamarba
+Evaluación final - Módulo 2 SQL
 
 # SAKILA | Descripción General 
 
@@ -14,3 +14,11 @@ La base de datos Sakila incluye las siguientes tablas principales y sus relacion
 - Rental: Registra los alquileres realizados por los clientes, incluyendo la fecha de alquiler, fecha de devolución y la película alquilada.
 - Category: Define las categorías de las películas (por ejemplo, acción, comedia, drama).
 - Y otras: La base de datos incluye tablas adicionales para manejar relaciones más complejas, como actores en películas, películas en categorías, etc.
+
+# bjetivo del Proyecto
+
+El objetivo principal de este proyecto es proporcionar una plataforma para:
+
+- Practicar SQL: Escribir consultas para recuperar, filtrar y analizar datos de la tienda de alquiler de películas.
+- Explorar conceptos de bases de datos: Entender cómo se relacionan las tablas, cómo se utilizan las claves primarias y foráneas, y cómo realizar diferentes tipos de uniones (joins).
+- Desarrollar habilidades de análisis de datos: Utilizar SQL para responder preguntas sobre los datos, identificar tendencias y patrones.
