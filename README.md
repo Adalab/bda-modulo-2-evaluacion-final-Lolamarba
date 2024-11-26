@@ -5,7 +5,10 @@ Alumna: Lola Martorell
 
 # SAKILA | Descripción General 
 
-Este proyecto utiliza la base de datos Sakila, una base de datos de muestra diseñada para simular una tienda de alquiler de películas. Sakila es una herramienta para practicar y aprender SQL, así como para explorar conceptos de bases de datos relacionales.
+Imaginemos que tenemos una tienda de alquiler de películas súper chula. 
+# ¿Cómo explicaríamos que es SAKILA? 
+Sakila es como una versión digital de esa tienda, pero en formato de base de datos. Sirve para practicar cómo buscar y organizar información usando un lenguaje llamado SQL. 
+Exploramos conceptos de bases de datos relacionales. ¡Es como ser una detective de películas!
 
 # Estructura de la Base de Datos
 
