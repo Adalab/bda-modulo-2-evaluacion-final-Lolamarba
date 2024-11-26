@@ -24,4 +24,4 @@ El objetivo principal de este proyecto es proporcionar una plataforma para:
 
 - Practicar SQL: Escribir consultas para recuperar, filtrar y analizar datos de la tienda de alquiler de películas.
 - Explorar conceptos de bases de datos: Entender cómo se relacionan las tablas, cómo se utilizan las claves primarias y foráneas, y cómo realizar diferentes tipos de uniones (joins).
-- Desarrollar habilidades de análisis de datos: Utilizar SQL para responder preguntas sobre los datos, identificar tendencias y patrones.
+- Desarrollar habilidades de análisis de datos.
