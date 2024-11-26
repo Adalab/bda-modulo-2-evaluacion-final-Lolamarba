@@ -22,7 +22,7 @@ La base de datos Sakila incluye las siguientes tablas principales y sus relacion
 - Category: Define las categorías de las películas (por ejemplo, acción, comedia, drama).
 - Y otras: La base de datos incluye tablas adicionales para manejar relaciones más complejas, como actores en películas, películas en categorías, etc.
 
-# bjetivo del Proyecto
+# Objetivo del Proyecto
 
 El objetivo principal de este proyecto es proporcionar una plataforma para:
 
