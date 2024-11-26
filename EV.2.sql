@@ -151,3 +151,37 @@ SELECT title
 FROM film
 WHERE rating = 'R'
 AND length > 120;
+
+
+--- BONUS 
+
+-- 18. Muestra el nombre y apellido de los actores que aparecen en más de 10 películas
+
+SELECT 
+first_name AS Nombre,
+last_name AS Apellido
+FROM actor
+LEFT JOIN film_actor
+ON actor.actor_id = film_actor.actor_id
+GROUP BY 
+actor.actor_id,
+Nombre,
+Apellido
+HAVING COUNT(film_actor.film_id) > 10;
+
+-- Ejercicio 19: Hay algún actor o actriz que no apareca en ninguna película en la tabla film_actor
+
+SELECT 
+first_name AS Nombre, 
+last_name AS Apellido 
+FROM actor
+LEFT JOIN film_actor 
+ON actor.actor_id = film_actor.actor_id
+WHERE film_actor.actor_id IS NULL;
+
+# LEFT JOIN: Garantiza que todos los actores de la tabla actor sean incluidos en el resultado, incluso si no han aparecido en ninguna película
+# WHERE NULL: Filtra los resultados para mostrar únicamente aquellos actores donde no se encontró una coincidencia en la tabla film_actor. Esto significa que el actor_id en film_actor es nulo para esos actores
+
+-- Ejercicio 20: Encuentra las categorías de películas que tienen un promedio de duración superior a 120 minutos y muestra el nombre de la categoría junto con el promedio de duración
+
+
