@@ -37,9 +37,7 @@ WHERE length > 120;
 
 SELECT DISTINCT
 first_name
-FROM actor 
-ORDER BY
-first_name; 
+FROM actor; 
 
 -- Ejercicio 6: Encuentra el nombre y apellido de los actores que tengan "Gibson" en su apellido
 
