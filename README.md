@@ -6,7 +6,8 @@ Alumna: Lola Martorell
 # SAKILA | Descripción General 
 
 Imaginemos que tenemos una tienda de alquiler de películas súper chula. 
-- ¿Cómo explicaríamos qué es SAKILA? 
+- ¿Cómo explicaríamos qué es SAKILA?
+  
 Sakila es como una versión digital de esa tienda, pero en formato de base de datos. Sirve para practicar cómo buscar y organizar información usando un lenguaje llamado SQL. 
 Exploramos conceptos de bases de datos relacionales. ¡Es como ser una detective de películas!
 
