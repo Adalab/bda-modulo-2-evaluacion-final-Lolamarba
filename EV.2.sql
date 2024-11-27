@@ -145,7 +145,7 @@ WHERE film.film_id IN (
   )
 );
 
--- 17. Encuentra el título de todas las películas que son "R" y tienen una duración mayor a 2 horas en la tabla film
+-- Ejercicio 17. Encuentra el título de todas las películas que son "R" y tienen una duración mayor a 2 horas en la tabla film
 
 SELECT title
 FROM film
@@ -155,7 +155,7 @@ AND length > 120;
 
 --- BONUS 
 
--- 18. Muestra el nombre y apellido de los actores que aparecen en más de 10 películas
+-- Ejercicio 18. Muestra el nombre y apellido de los actores que aparecen en más de 10 películas
 
 SELECT 
 first_name AS Nombre,
