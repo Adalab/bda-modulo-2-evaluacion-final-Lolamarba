@@ -143,18 +143,13 @@ WHERE release_year BETWEEN 2005 AND 2010;
 
 -- Ejercicio 16:  Encuentra el título de todas las películas que son de la misma categoría que "Family"
 
-SELECT 
-film.title AS Título
-FROM film 
-WHERE film.film_id IN (
-  SELECT film_category.film_id
-  FROM film_category
-  WHERE film_category.category_id = (
-    SELECT category_id
-    FROM category
-    WHERE name = 'Family'
-  )
-);
+SELECT
+film.title AS película,
+category.name AS categoría
+FROM film
+LEFT JOIN category
+ON film.film_id = category.category_id
+WHERE category.name = 'family';
 
 -- 17. Encuentra el título de todas las películas que son "R" y tienen una duración mayor a 2 horas en la tabla film
 
@@ -211,15 +206,13 @@ HAVING AVG(film.length) > 120;
 
 SELECT 
 actor.first_name AS Nombre,
-actor.last_name AS Apellido,
 COUNT(film_actor.film_id) AS Cantidad_Peliculas
 FROM actor 
 INNER JOIN film_actor  
 ON actor.actor_id = film_actor.actor_id
 GROUP BY 
 actor.actor_id, 
-actor.first_name, 
-actor.last_name
+actor.first_name
 HAVING COUNT(film_actor.film_id) >= 5;
 
 -- Ejercicio 22: Encuentra el título de todas las películas que fueron alquiladas por más de 5 días. Utiliza una subconsulta para encontrar los rental_ids con una duración superior a 5 días y luego selecciona las películas correspondientes
