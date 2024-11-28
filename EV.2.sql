@@ -86,7 +86,18 @@ customer.customer_id, customer.first_name, customer.last_name;
 
 -- Ejercicio 11: Encuentra la cantidad total de películas alquiladas por categoría y muestra el nombre de la categoría junto con el recuento de alquileres
 
-
+SELECT 
+category.name AS Categoria,
+COUNT(rental.rental_id) AS Total_Alquileres
+FROM category
+INNER JOIN film_category 
+ON category.category_id = film_category.category_id
+INNER JOIN inventory  
+ON film_category.film_id = inventory.film_id
+INNER JOIN rental 
+ON inventory.inventory_id = rental.inventory_id
+GROUP BY 
+category.name;
 
 -- Ejercicio 12: Encuentra el promedio de duración de las películas para cada clasificación de la tabla film y muestra la clasificación junto con el promedio de duración
 
@@ -145,7 +156,7 @@ WHERE film.film_id IN (
   )
 );
 
--- Ejercicio 17. Encuentra el título de todas las películas que son "R" y tienen una duración mayor a 2 horas en la tabla film
+-- 17. Encuentra el título de todas las películas que son "R" y tienen una duración mayor a 2 horas en la tabla film
 
 SELECT title
 FROM film
@@ -155,7 +166,7 @@ AND length > 120;
 
 --- BONUS 
 
--- Ejercicio 18. Muestra el nombre y apellido de los actores que aparecen en más de 10 películas
+-- 18. Muestra el nombre y apellido de los actores que aparecen en más de 10 películas
 
 SELECT 
 first_name AS Nombre,
